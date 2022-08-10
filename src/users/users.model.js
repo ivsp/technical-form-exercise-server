@@ -1,5 +1,6 @@
 import { MongoClient } from "mongodb";
 const { DB_PW } = process.env;
+console.log(DB_PW);
 
 const URI = `mongodb+srv://ivsp:${DB_PW}@cluster0.qmsat1f.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(URI);
