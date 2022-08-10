@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "*",
+    "Access-Control-Allow-Origin": "http://localhost:3000/",
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
   })
